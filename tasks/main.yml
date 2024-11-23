@@ -1,4 +1,3 @@
-# tasks file for fail2ban
 ---
 - name: OracleLinux | Add EPEL repo
   ansible.builtin.copy:
