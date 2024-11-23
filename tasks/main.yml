@@ -9,11 +9,13 @@
   ansible.builtin.rpm_key:
     key: "{{ epel_repo_gpg_key_url }}"
     state: present
+  when: ansible_os_family == "Redhat"
 
 - name: RHEL | Add EPEL repo
   ansible.builtin.yum:
     name: "{{ epel_repo_url }}"
     state: present
+  when: ansible_os_family == "Redhat"
 
 - name: install
   package:
