@@ -10,9 +10,14 @@ galaxy_info:
       versions:
         - xenial
         - yakkety
+        - focal
+        - jammy
+        - noble
     - name: EL
       versions:
         - 7
+        - 8
+        - 9
   galaxy_tags:
     - system
     - networking
